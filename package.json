@@ -1,0 +1,17 @@
+{
+  "name": "devneko-image-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "create-lambda": "./deploy/create-lambda.sh",
+    "update-lambda": "./deploy/update-lambda.sh"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.394.0",
+    "sharp": "^0.21.3"
+  },
+  "devDependencies": {
+    "claudia": "^5.3.0"
+  }
+}
