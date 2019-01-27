@@ -25,28 +25,14 @@ function handler(event, context, callback) {
             'body': buffer.toString('base64'),
         })
     }).catch(error => {
-        console.log(error)
-        context.fail('processing failed')
+        if (typeof error === 'string') {
+          context.fail(error)
+        } else if (typeof error === 'object' && typeof error.message !== 'undefined') {
+          context.fail(error.message)
+        } else {
+          context.fail('processing failed')
+        }
     })
 }
 
 exports.handler = handler
-
-/*
-handler({
-        path: '/work/photo.png',
-        queryStringParameters: {
-            w: '100',
-            fit: 'contain',
-        },
-    },
-    {
-        fail: msg => {
-            console.error(msg)
-        },
-    },
-    (a, msg) => {
-        console.log(msg)
-    },
-)
-*/
