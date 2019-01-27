@@ -1,8 +1,14 @@
 This product provides the ability to resize an image on the fly with AWS lambda and S3 and sharp.
 
+## Docker installation
+
+You need to install docker before using this product.
+
+https://docs.docker.com/install/
+
 ## Setup AWS credentials
 
-This project uses [cloudia](https://github.com/claudiajs/claudia) to deploy a lambda function and setup api gateway.
+This project uses [cloudia](https://github.com/claudiajs/claudia) to deploy a lambda function and setup API gateway.
 So you need to setup AWS credentials to `.aws/credentials` like this:
 
 ```
@@ -11,9 +17,9 @@ aws_access_key_id = YOUR_ACCESS_KEY
 aws_secret_access_key = YOUR_ACCESS_SECRET
 ```
 
-And set the environment variable to cloudia.
+Then set the environment variable AWS_PROFILE to cloudia.
 
-```
+```bash
 export AWS_PROFILE=cloudia
 ```
 
@@ -49,10 +55,6 @@ This file will be used for update and destroy command.
 ```bash
 yarn run create
 ```
-
-NOTE:
-
-The lambda function created by this command have 512MB memory and 10 seconds timeout setting.
 
 ### Updating a lambda function
 
