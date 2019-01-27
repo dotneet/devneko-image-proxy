@@ -21,7 +21,7 @@ yarn install --production
 yarn run docker:$pkgcmd
 
 # Save claudia.json
-if [ "$pkgcmd" == "create-lamba" ];then
+if [ "$pkgcmd" == "create-lambda" ];then
   cp claudia.json /work/app/claudia.json
 fi
 
