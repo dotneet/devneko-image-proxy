@@ -14,5 +14,5 @@ docker run \
   -e AWS_S3_BUCKET=$AWS_S3_BUCKET \
   -e PATH_PREFIX=$PATH_PREFIX \
   devneko-ip-builder \
-  /work/app/deploy/package-command-executor.sh create-lambda
+  /work/app/docker/run-package-command.sh destroy-lambda
 

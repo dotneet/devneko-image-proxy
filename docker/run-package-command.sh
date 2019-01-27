@@ -10,8 +10,8 @@ if [ -f claudia.json ];then
   cp claudia.json /work/out
 fi
 set -e
-cp -r lib deploy /work/out/
+cp -r lib docker /work/out/
 cd /work/out
 yarn install --production
-yarn run $pkgcmd
+yarn run docker:$pkgcmd
 cp claudia.json /work/app/claudia.json

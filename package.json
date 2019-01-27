@@ -4,8 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "create-lambda": "./deploy/create-lambda.sh",
-    "update-lambda": "./deploy/update-lambda.sh"
+    "create": "./scripts/create.sh",
+    "update": "./scripts/update.sh",
+    "destroy": "./scripts/destroy.sh",
+    "docker:create-lambda": "./docker/create-lambda.sh",
+    "docker:update-lambda": "./docker/update-lambda.sh",
+    "docker:destroy-lambda": "./docker/destroy-lambda.sh"
   },
   "dependencies": {
     "aws-sdk": "^2.394.0",
