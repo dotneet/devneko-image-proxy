@@ -6,6 +6,8 @@ claudia create \
         --handler index.handler \
         --runtime "nodejs8.10" \
         --role ${LAMBDA_ROLE} \
+        --memory 512 \
+        --timeout 10 \
         --deploy-proxy-api \
         --set-env "S3_BUCKET=${S3_BUCKET}"
 

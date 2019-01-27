@@ -7,6 +7,6 @@ cd $wd
 
 run-package-command destroy-lambda
 
-if [ -f claudia.json ];then
+if [ -f ../claudia.json ];then
   rm ../claudia.json
 fi

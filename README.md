@@ -50,6 +50,10 @@ This file will be used for update and destroy command.
 yarn run create
 ```
 
+NOTE:
+
+The lambda function created by this command have 512MB memory and 10 seconds timeout setting.
+
 ### Updating a lambda function
 
 ```bash
