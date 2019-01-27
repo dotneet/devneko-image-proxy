@@ -13,9 +13,11 @@ const ContentTypes = {
 }
 
 function handler(event, context, callback) {
-    const ctx = new Context(event, context, process.env.S3_BUCKET, process.env.KEY_PREFIX)
+    const path = event.path
+    const query = event.queryStringParameters
+    const ctx = new Context({path, query}, process.env.S3_BUCKET, process.env.KEY_PREFIX)
     fetch(ctx).then(data => {
-        return processImage(data, ctx.image)
+        return processImage(data, ctx.params)
     }).then(result => {
         const {buffer, info} = result
         const contentType = ContentTypes[info.format] || 'image/jpeg'

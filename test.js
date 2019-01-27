@@ -4,9 +4,10 @@ const {handler} = require('./index.js')
 handler({
         path: '/work/photo.png',
         queryStringParameters: {
-            w: '100',
-            h: '100',
+            w: '10',
+            h: '10',
             fit: 'contain',
+            format: 'jpeg',
         },
     },{
         fail: msg => {
