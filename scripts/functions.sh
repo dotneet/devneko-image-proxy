@@ -9,7 +9,7 @@ function run-package-command {
     -ti \
     -e AWS_REGION=$AWS_REGION \
     -e LAMBDA_ROLE=$LAMBDA_ROLE \
-    -e AWS_S3_BUCKET=$AWS_S3_BUCKET \
+    -e S3_BUCKET=$S3_BUCKET \
     -e PATH_PREFIX=$PATH_PREFIX \
     devneko-ip-builder \
     /work/app/docker/run-package-command.sh $1
