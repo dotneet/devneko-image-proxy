@@ -1,4 +1,4 @@
-This product provides the ability to resize an image on the fly with AWS lambda.
+This product provides the ability to resize an image on the fly with AWS lambda and S3 and sharp.
 
 ## Setup AWS credentials
 
@@ -28,7 +28,7 @@ cp .env-example .env
 AWS_REGION:
 Set the region of S3 bucket.
 
-AWS_S3_BUCKET:
+S3_BUCKET:
 Set the S3 bucket that you want to access.
 
 LAMBDA_ROLE:

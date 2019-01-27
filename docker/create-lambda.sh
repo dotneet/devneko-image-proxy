@@ -7,5 +7,5 @@ claudia create \
         --runtime "nodejs8.10" \
         --role ${LAMBDA_ROLE} \
         --deploy-proxy-api \
-        --set-env "S3_BUCKET=${AWS_S3_BUCKET}"
+        --set-env "S3_BUCKET=${S3_BUCKET}"
 

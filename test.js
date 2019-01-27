@@ -1,8 +1,8 @@
-'use strict'
+require('dotenv').config()
 
-const handler = require('./index')
+const {handler} = require('./index.js')
 handler({
-        path: '/photo.jpg',
+        path: '/work/photo.png',
         queryStringParameters: {
             w: '100',
             h: '100',
