@@ -38,14 +38,29 @@ This role must have the privilege to allow the access to the S3 bucket.
 PATH_PREFIX: (Optional)
 This value will be used as the prefix of S3 key.
 
-## Deployment
+## Command
 
-### Creating lambda function
+### Creating a lambda function
 
-To deploy a lambda function to AWS, you can use the script `./deploy/create.sh`.
+This command creates a lambda function and API gateway.
 After completes creating the lambda function, `claudia.json` will be created.
+This file will be used for update and destroy command.
 
 ```bash
-./deploy/create.sh
+yarn run create
+```
+
+### Updating a lambda function
+
+```bash
+yarn run update
+```
+
+### Destroying a lambda function
+
+After completes destorying the lambda function, `claudia.json` will be removed.
+
+```bash
+yarn run destroy
 ```
 
