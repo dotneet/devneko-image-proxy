@@ -38,8 +38,9 @@ S3_BUCKET:
 Set the S3 bucket that you want to access.
 
 LAMBDA_ROLE:
-Setup the role for lambda function.
+Set the role for lambda function.
 This role must have the privilege to allow the access to the S3 bucket.
+You can use the command `yarn create-role` to create a role.
 
 PATH_PREFIX: (Optional)
 This value will be used as the prefix of S3 key.

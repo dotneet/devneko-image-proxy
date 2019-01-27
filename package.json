@@ -7,6 +7,7 @@
     "create": "./scripts/create.sh",
     "update": "./scripts/update.sh",
     "destroy": "./scripts/destroy.sh",
+    "create-role": "node ./scripts/create-role.js",
     "docker:create-lambda": "./docker/create-lambda.sh",
     "docker:update-lambda": "./docker/update-lambda.sh",
     "docker:destroy-lambda": "./docker/destroy-lambda.sh"
@@ -16,6 +17,7 @@
     "sharp": "^0.21.3"
   },
   "devDependencies": {
+    "bluebird": "^3.5.3",
     "claudia": "^5.3.0",
     "dotenv": "^6.2.0"
   }
