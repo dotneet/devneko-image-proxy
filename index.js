@@ -14,7 +14,7 @@ const ContentTypes = {
 
 function handler(event, context, callback) {
     const path = event.path
-    const query = event.queryStringParameters
+    const query = event.queryStringParameters || {}
     const ctx = new Context({path, query}, process.env.S3_BUCKET, process.env.KEY_PREFIX)
     fetch(ctx).then(data => {
         return processImage(data, ctx.params)
