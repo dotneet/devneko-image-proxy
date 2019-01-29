@@ -34,13 +34,22 @@ cp .env-example .env
 AWS_REGION:
 Set the region of S3 bucket.
 
+AWS_PROFILE:
+The aws profile you want to use.
+
 S3_BUCKET:
 Set the S3 bucket that you want to access.
 
 LAMBDA_ROLE:
 Set the role for lambda function.
 This role must have the privilege to allow the access to the S3 bucket.
-You can use the command `yarn create-role` to create a role.
+You can use the command `yarn run create-role` to create a role.
+
+LAMBDA_MEMORY:
+The memory size of lambda function.
+
+LAMBDA_TIMEOUT:
+The timeout seconds of lambda function.
 
 PATH_PREFIX: (Optional)
 This value will be used as the prefix of S3 key.
