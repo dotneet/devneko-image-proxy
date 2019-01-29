@@ -54,7 +54,7 @@ The timeout seconds of lambda function.
 PATH_PREFIX: (Optional)
 This value will be used as the prefix of S3 key.
 
-## Command
+## Management commands
 
 ### Creating a lambda function
 
@@ -79,4 +79,29 @@ After completes destorying the lambda function, `claudia.json` will be removed.
 ```bash
 yarn run destroy
 ```
+
+## Accessing an image
+
+You can access the image via API gateway like this:
+
+```
+https://xxxxxxxx.execute-api.ap-northeast-1.amazonaws.com/latest/path.jpg?w=640&h=480
+```
+
+The processing options are specified with query parameters.
+If query parameters are not set, an image will not be processed.
+
+### Image processing options
+
+ - w: width of a image.
+ - h: height of a image.
+ - q: quality (1-100)
+ - prog: if specified, a lambda function returns the progressive image.
+ - format: convert an image to the format specified in this option. The possible values are jpeg, png, gif, webp.
+
+## Tips
+
+### Claudflare Integration
+
+[Cloudflare.md](https://github.com/dotneet/devneko-image-proxy/blob/master/Cloudflare.md)
 
