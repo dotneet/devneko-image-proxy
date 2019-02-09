@@ -11,7 +11,7 @@ https://stackoverflow.com/a/45849093/4221452
 1. You must setup base path mappings on custom domain settings.
 2. A page rule can be used to enable full SSL on a subdomain.
 3. Recommend to turn off Always Online on Cloudflare.
-   Accessing favicon.ico cause to switch to offline mode.
-   To turn off only in a subdomain, a page rule would be useful.
-4. No need to specify a stage name in the url when accessing the image.
+   Accessing favicon.ico makes cloudflare offline mode.
+   A page rule can be used to turn off Alaways Online only in a subdomain, 
+4. No need to specify a stage name in the url when accessing an image.
 
