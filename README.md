@@ -1,14 +1,14 @@
-This product provides the ability to resize an image on the fly with AWS lambda and S3 and sharp.
+The serverless image proxy that resizes and converts an image on the fly with AWS lambda and S3 and sharp.
 
 ## Docker installation
 
-You need to install docker before using this product.
+You need to install docker before using devneko-image-proxy.
 
 https://docs.docker.com/install/
 
 ## Setup AWS credentials
 
-This project uses [cloudia](https://github.com/claudiajs/claudia) to deploy a lambda function and setup API gateway.
+devneko-image-proxy uses [cloudia](https://github.com/claudiajs/claudia) to deploy a lambda function and setup API gateway.
 So you need to setup AWS credentials to `.aws/credentials` like this:
 
 ```
@@ -42,7 +42,7 @@ Set the S3 bucket that you want to access.
 
 LAMBDA_ROLE:
 Set the role for lambda function.
-This role must have the privilege to allow the access to the S3 bucket.
+This role must have the privilege that allows the access to the S3 bucket.
 You can use the command `yarn run create-role` to create a role.
 
 LAMBDA_MEMORY:
@@ -82,7 +82,7 @@ yarn run destroy
 
 ## Accessing an image
 
-You can access the image via API gateway like this:
+You can access an image via API gateway like this:
 
 ```
 https://xxxxxxxx.execute-api.ap-northeast-1.amazonaws.com/latest/path.jpg?w=640&h=480
@@ -93,8 +93,8 @@ If query parameters are not set, an image will not be processed.
 
 ### Image processing options
 
- - w: width of a image.
- - h: height of a image.
+ - w: width of an image.
+ - h: height of an image.
  - q: quality (1-100)
  - prog: if specified, a lambda function returns the progressive image.
  - format: convert an image to the format specified in this option. The possible values are jpeg, png, gif, webp.
