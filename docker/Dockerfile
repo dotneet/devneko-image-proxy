@@ -1,7 +1,7 @@
 FROM amazonlinux
 LABEL maintainer="devneko <dotneet@gmail.com>"
 RUN yum install -y gcc-c++ which zip && \
-    curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - && \
+    curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - && \
     yum install -y nodejs && \
     npm i -g yarn \
     yarn global add claudia

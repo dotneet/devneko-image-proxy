@@ -13,11 +13,11 @@
     "docker:destroy-lambda": "./docker/destroy-lambda.sh"
   },
   "dependencies": {
-    "aws-sdk": "^2.394.0",
-    "sharp": "^0.21.3"
+    "aws-sdk": "^2.814.0",
+    "sharp": "^0.26.3"
   },
   "devDependencies": {
-    "bluebird": "^3.5.3",
+    "bluebird": "^3.7.2",
     "claudia": "^5.3.0",
     "dotenv": "^6.2.0"
   }
