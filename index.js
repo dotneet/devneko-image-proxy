@@ -10,7 +10,7 @@ const ContentTypes = {
   gif: "image/gif",
   webp: "image/webp",
   avif: "image/avif",
-  heif: "image/heif",
+  heif: "image/avif",
   svg: "image/svg+xml",
 };
 
