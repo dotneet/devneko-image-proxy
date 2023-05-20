@@ -20,7 +20,7 @@ aws_secret_access_key = YOUR_ACCESS_SECRET
 Then set the environment variable AWS_PROFILE to cloudia.
 
 ```bash
-export AWS_PROFILE=cloudia
+export AWS_PROFILE=claudia
 ```
 
 ## Configuration

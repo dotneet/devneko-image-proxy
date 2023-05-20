@@ -20,6 +20,7 @@ function run-package-command {
     -v $wd/..:/work/app \
     -v $HOME/.aws:/root/.aws \
     -ti \
+    --entrypoint /bin/bash \
     -e AWS_REGION=$AWS_REGION \
     -e AWS_PROFILE=$AWS_PROFILE \
     -e LAMBDA_NAME=$LAMBDA_NAME \

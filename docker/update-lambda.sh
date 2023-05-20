@@ -1,3 +1,5 @@
 #!/bin/bash -ue
 
-claudia update
+echo execute claudia update
+claudia update --runtime nodejs12.x
+
