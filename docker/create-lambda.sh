@@ -4,7 +4,7 @@ claudia create \
         --region ${AWS_REGION} \
         --name ${LAMBDA_NAME} \
         --handler index.handler \
-        --runtime "nodejs12.x" \
+        --runtime "nodejs16.x" \
         --role ${LAMBDA_ROLE} \
         --memory ${LAMBDA_MEMORY} \
         --timeout ${LAMBDA_TIMEOUT} \

@@ -5,16 +5,18 @@
   "license": "MIT",
   "scripts": {
     "create": "./scripts/create.sh",
+    "pack": "./scripts/pack.sh",
     "update": "./scripts/update.sh",
     "destroy": "./scripts/destroy.sh",
     "create-role": "node ./scripts/create-role.js",
     "docker:create-lambda": "./docker/create-lambda.sh",
+    "docker:pack": "./docker/pack.sh",
     "docker:update-lambda": "./docker/update-lambda.sh",
     "docker:destroy-lambda": "./docker/destroy-lambda.sh"
   },
   "dependencies": {
     "aws-sdk": "^2.1379.0",
-    "sharp": "^0.30.7"
+    "sharp": "^0.32.1"
   },
   "devDependencies": {
     "claudia": "^5.14.1",
