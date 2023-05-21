@@ -63,14 +63,12 @@ After completes creating the lambda function, `claudia.json` will be created.
 This file will be used for update and destroy command.
 
 ```bash
-npm install --arch=arm64 --platform=linux
 npm run create
 ```
 
 ### Updating a lambda function
 
 ```bash
-npm install --arch=arm64 --platform=linux
 npm run update
 ```
 

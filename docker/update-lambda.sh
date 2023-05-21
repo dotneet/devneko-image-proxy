@@ -1,4 +1,4 @@
 #!/bin/bash -ue
 
-claudia update --arch arm64 --runtime nodejs16.x
+claudia update --runtime nodejs16.x --arch x86_64
 
