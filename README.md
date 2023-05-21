@@ -63,13 +63,15 @@ After completes creating the lambda function, `claudia.json` will be created.
 This file will be used for update and destroy command.
 
 ```bash
-yarn run create
+npm install --arch=arm64 --platform=linux
+npm run create
 ```
 
 ### Updating a lambda function
 
 ```bash
-yarn run update
+npm install --arch=arm64 --platform=linux
+npm run update
 ```
 
 ### Destroying a lambda function
@@ -77,7 +79,7 @@ yarn run update
 After completes destorying the lambda function, `claudia.json` will be removed.
 
 ```bash
-yarn run destroy
+npm run destroy
 ```
 
 ## Accessing an image
